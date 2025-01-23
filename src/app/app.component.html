@@ -1,10 +1,17 @@
 <div class="app">
-    <h1 [innerHTML]="title"></h1>
+    <!-- <h1 [innerHTML]="title"></h1>
     <h1>{{title}}</h1>
-    <img [src]="logo">
-    <input type="text" [value]="name">
-    <div>{{ name}}</div>
+    <img [src]="logo"> -->
 
+    <button (click)="handleClick()">
+        Change Name
+    </button>
+    <input type="text"
+     [ngModel]="name"
+     (ngModelChange)="handleChange($event)">
+     <input type="text"
+     [(ngModel)]="name">
+    <div>{{ name}}</div>
 
     <!-- {{title + '!'}}
     <div>

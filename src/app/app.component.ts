@@ -1,13 +1,24 @@
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
+  imports : [],
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'lite-store-main';
+  title: string ;
+  logo: string = '../assets/img/logo.png' ;
+  name: string = 'Todd';
+
+  // isHappy: boolean = false;
+  // numberOne: number = 1;
+  // numberTwo: number = 2;
+  constructor() {
+    this.title = 'lite-store-main'
+  }
+
 }

@@ -15,12 +15,10 @@ export class AppComponent {
    title: string ;
   // logo: string = '../assets/img/logo.png' ;
   name: string = 'Todd';
-  handleClick(){
-    this.name = 'Motto' ;
+  handleClick(value: string){
+    console.log(value);
   }
-  handleChange(value: string){
-    this.name = value;
-  }
+
 
 
   // isHappy: boolean = false;
